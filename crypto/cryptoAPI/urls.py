@@ -1,8 +1,5 @@
 from django.conf.urls import url
-from cryptoAPI.views import (
-    news_view,
-    ethereum_view
-)
+from cryptoAPI.views import news_view, ethereum_view
 
 urlpatterns = [
     # settings

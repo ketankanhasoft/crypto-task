@@ -6,7 +6,6 @@ from cryptoAPI.serializers import NewsSerializer
 
 
 class EthereumPrice(APIView):
-
     def get(self, request, *args, **kwargs):
         ethereum_price = scrape.Scrape().scrape_ethereum_price()
         return Response(status=200, data={"price": ethereum_price})
